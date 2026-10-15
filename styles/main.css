@@ -1,0 +1,104 @@
+/* Makes the page cover the whole window */
+body
+{
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden
+}
+
+.root
+{
+    /* Flexbox that covers the whole page */
+    display: flex; 
+    min-height: 100vh;
+    flex-wrap: nowrap;
+    /*background-color: DodgerBlue;*/
+}
+
+
+/* All the sections of the flexbox (about, modlists, controls) are divs inside root */
+.section
+{
+    /* Each section is a vertical flex itself */
+    display: flex;
+    flex-direction: column;
+
+    /*background-color: #f1f1f1;*/
+}
+
+
+/* For the lists of inactive and active mods */
+.modlistHeader
+{
+    background-color: blueviolet;
+    text-align: center;
+}
+/* This becomes a textfield/flex for a search bar, between the label and the list */
+.textfield
+{
+    border-collapse: separate;
+    border: 1px ridge black;
+    display: flex;
+    flex-direction: column;
+}
+.modlistHolder
+{
+    flex-grow: 3;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.modList
+{
+    display: flex;
+    flex-direction: column;
+    /* need to give it a border somehow*/
+    overflow: auto;
+    overflow-y: scroll;
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+
+/* For the mod preview and about.xml information */
+.modinfo
+{
+    flex-grow: 5;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.modPreview
+{
+    background-color: rgb(12, 0, 122);
+    flex-grow: 2;
+}
+.modDetail
+{
+    background-color: rgb(68, 13, 68);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.control
+{
+    flex-grow: 1;
+    align-items: center;
+}
+
+
+/* ------------- */
+/* --- Misc ---- */
+.expandHeight
+{
+    background-color: rgb(138, 19, 19);
+    height: 100%;
+}
+.expandWidth
+{
+    width: 100%;
+}
+/* ------------- */
+
+
+
+/* --- Test --- */

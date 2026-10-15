@@ -1,0 +1,24 @@
+{
+  "name": "sort",
+  "version": "1.0.0",
+  "description": "rimworld mod manager",
+  "homepage": "https://github.com/Thekiborg/rimworld-mod-manager#readme",
+  "bugs": {
+    "url": "https://github.com/Thekiborg/rimworld-mod-manager/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thekiborg/rimworld-mod-manager.git"
+  },
+  "license": "ISC",
+  "author": "Thekiborg",
+  "type": "commonjs",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^44.7.2"
+  }
+}
